@@ -93,31 +93,36 @@
 
     <!--    BILLEDE RÆKKE M HOVEDRETTER ------>
 
-    <h1> HOVEDRETTER </h1>
-    <div class="container">
-
-        <div class="row recipes">
-            <!-- TemplateRecipe ind her -->
+    <!--HOVEDRETTER PAGE HEADING-->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">HOVEDRETTER</h1>
         </div>
     </div>
 
-    <!--    HOVEDRET 1 -->
-    <template id="produkt_template">
+    <!--    ROW  -->
+
+    <div class="row produktliste">
+        <!-- HER SKAL PRODUKTERNE LÆGGES IND-->
+
+        <!--    HOVEDRET 1 -->
+        <template id="produkt_template">
 
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
-            <a href="#"><img class="img-responsive data_billede" src="imgs/small/boef-sm.jpg" alt="billede"></a>
-            <h3 class="data_navn">DATA_NAVN</h3>
-            <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
-            <!--        SKAL KUN VISES VED RABAT-->
-            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                <a href="#"><img class="img-responsive data_billede" src="imgs/small/boef-sm.jpg" alt="billede"></a>
+                <h3 class="data_navn">DATA_NAVN</h3>
+                <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
+                <!--        SKAL KUN VISES VED RABAT-->
+                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
 
-            <!--        SKAL KUN VISES VED UDSOLGT-->
-            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
-            <!--        BUTTON-->
-            <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> Se detaljer <span class="glyphicon glyphicon-chevron-right"></span></button>
-        </div>
-    </template>
+                <!--        SKAL KUN VISES VED UDSOLGT-->
+                <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                <!--        BUTTON-->
+                <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> Se detaljer <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
+        </template>
+    </div>
 
     <!--    BILLEDE 2 -->
 
@@ -167,15 +172,17 @@
 
     <!--                LUK MODAL BOKS-->
 
+    <!--
     <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+-->
 
 
     <!--SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="petrograd.js"></script>
+    <script src="js/petrograd.js"></script>
 
 </body>
 

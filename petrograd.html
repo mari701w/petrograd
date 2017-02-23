@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="petrograd.css" type="text/css" rel="stylesheet">
+    <title>Restaurant Petrograd</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#">Om</a> </li>
+                    <li> <a href="#">Kontakt</a> </li>
+                    <li> <a href="#">Om vores retter</a> </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!------ -SPLASH CAROUSEL-------->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators ">
+            <li data-target="#carousel-example-generic " data-slide-to="0 " class="active "></li>
+            <li data-target="#carousel-example-generic " data-slide-to="1 "></li>
+            <li data-target="#carousel-example-generic " data-slide-to="1 "></li>
+            <li data-target="#carousel-example-generic " data-slide-to="1 "></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active ">
+                <img src="imgs/medium/boef-md.jpg" alt="splash ">
+
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item ">
+                <img src="imgs/medium/caviarbruschetta-md.jpg" alt="splash ">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item ">
+                <img src="imgs/medium/bulgarskbondesuppe-md.jpg" alt="splash ">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item ">
+                <img src="imgs/medium/bochkarev-md.jpg" alt="splash ">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <!--    BILLEDE RÆKKE M HOVEDRETTER ------>
+
+    <h1> HOVEDRETTER </h1>
+    <div class="container">
+
+        <div class="row recipes">
+            <!-- TemplateRecipe ind her -->
+        </div>
+    </div>
+
+    <!--    BILLEDE 1 -->
+
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <img src="imgs/small/boef-sm.jpg" alt="billede">
+        <h4>Navn på ret</h4>
+        <p>Text</p>
+        <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
+    </div>
+
+    <!--    BILLEDE 2 -->
+
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <img src="imgs/small/baltiskbondesuppe-sm.jpg" alt="billede">
+        <h4>Navn på ret</h4>
+        <p>Text</p>
+        <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
+    </div>
+
+    <!--    BILLEDE 3 -->
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <img src="imgs/small/borsjtj-sm.jpg" alt="billede">
+        <h4>Navn på ret</h4>
+        <p>Text</p>
+        <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
+    </div>
+
+    <!--    BILLEDE 4 -->
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <img src="imgs/small/bulgarskbondesuppe-sm.jpg" alt="billede">
+        <h4>Navn på ret</h4>
+        <p>Text</p>
+        <button type="button" class="btn btn-primary btn-lg open-modal" data-toggle="modal" data-target="#myModal" data-id="21"> LÆS MERE </button>
+    </div>
+
+
+
+
+    <!--     MODAL BOKS -->
+    <!--    REN FKT KODE-->
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">INFORMATIONER OM RETTEN</h4> </div>
+                <!--                    INFORMATIONER OM RETTEN INDE I MODAL BOKSEN-->
+                <div class="modal-body"> <img src="imgs/medium/boef-md.jpg" class="img-responsive" alt="billede">
+                    <p>NAVN: <span class="data_navn">NAVN </span></p>
+                    <p>LANGBESKRIVELSE: <span class="data_langbeskrivelse">LANGBESKRIVELSE </span></p>
+                    <p>PRIS: <span class="data_pris">PRIS </span></p>
+                    <p>UDSOLGT: <span class="data_udsolgt">UDSOLGT </span></p>
+                    <p>RABAT: <span class="data_rabat">RABAT</span></p>
+                    <p>VEGETAR: <span class="data_vegetar">VEGETAR</span></p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--                LUK MODAL BOKS-->
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+
+
+    <!--SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="petrograd.js"></script>
+
+</body>
+
+</html>

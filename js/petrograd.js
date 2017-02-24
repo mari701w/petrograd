@@ -29,11 +29,14 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
 
+<<<<<<< HEAD
     klon.querySelector('button').dataset.id = produkt.id;
 
     klon.querySelector('button').addEventListener('.click', knapKlikketPå);
 
 
+=======
+>>>>>>> origin/master
     if (produkt.udsolgt == false) {
         // produktet er ikke udsolgt
         // udsolgttekst skal fjernes

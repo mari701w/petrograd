@@ -12,7 +12,7 @@
 <body>
 
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar transparent navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -96,18 +96,17 @@
     <!--HOVEDRETTER PAGE HEADING-->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">HOVEDRETTER</h1>
+            <h1 class="page-header">FORRETTER</h1>
         </div>
     </div>
 
     <!--    ROW  -->
 
-    <div class="row produktliste">
+    <div class="row forretter">
         <!-- HER SKAL PRODUKTERNE LÆGGES IND-->
 
         <!--    HOVEDRET 1 -->
         <template id="produkt_template">
-
 
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
                 <a href="#"><img class="img-responsive data_billede" src="imgs/small/boef-sm.jpg" alt="billede"></a>
@@ -124,46 +123,47 @@
         </template>
     </div>
 
-    <!--    BILLEDE 2 -->
+    <div class="row hovedretter">
+        <div class="col-lg-12">
+            <h2 class="page-header">HOVEDRETTER</h2>
+        </div>
+    </div>
 
+    <div class="row desserter">
+        <div class="col-lg-12">
+            <h2 class="page-header">DESSERTER</h2>
+        </div>
+    </div>
 
+    <div class="row drikkevarer">
+        <div class="col-lg-12">
+            <h2 class="page-header">DRIKKEVARER</h2>
+        </div>
+    </div>
 
-
-
-
-
-    <!--    BILLEDE 3 -->
-
-
-
-
-
-
-    <!--    BILLEDE 4 -->
-
-
-
-
+    <div class="row sideorders">
+        <div class="col-lg-12">
+            <h2 class="page-header">SIDE ORDERS</h2>
+        </div>
+    </div>
 
 
     <!--     MODAL BOKS -->
     <!--    REN FKT KODE-->
 
-    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title">INFORMATIONER OM RETTEN</h4> </div>
-                <!--                    INFORMATIONER OM RETTEN INDE I MODAL BOKSEN-->
-                <div class="modal-body"> <img src="imgs/medium/boef-md.jpg" class="img-responsive" alt="billede">
-                    <p>NAVN: <span class="data_navn">NAVN </span></p>
-                    <p>LANGBESKRIVELSE: <span class="data_langbeskrivelse">LANGBESKRIVELSE </span></p>
-                    <p>PRIS: <span class="data_pris">PRIS </span></p>
-                    <p>UDSOLGT: <span class="data_udsolgt">UDSOLGT </span></p>
-                    <p>RABAT: <span class="data_rabat">RABAT</span></p>
-                    <p>VEGETAR: <span class="data_vegetar">VEGETAR</span></p>
-
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button data-id="UDSKIFT_MIG" type="button" class="btn btn-primary btn-default" data-dismiss="modal">Luk</button>
 
                 </div>
             </div>
